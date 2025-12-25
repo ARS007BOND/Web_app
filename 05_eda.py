@@ -12,8 +12,7 @@ This web application helps medical professionals efficiently process large medic
 
 with st.sidebar.header("Please upload your file (.csv)"):
     uploaded_file = st.sidebar.file_uploader("Upload your file", type=['csv'])
-    st.sidebar.markdown("[Example CSV file](https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/archived_data/archived_daily_case_updates/01-21-2020_2200.csv)")
-
+    st.sidebar.markdown("[Example CSV file]
 if uploaded_file is not None:
     @st.cache_data
     def load_csv():
